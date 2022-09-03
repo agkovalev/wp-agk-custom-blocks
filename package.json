@@ -1,0 +1,22 @@
+{
+  "name": "wp-agk-custom-blocks",
+  "version": "0.1.0",
+  "description": "WordPress Plugin. Custom Gutenberg blocks library from Alexey Kovalev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agkovalev/wp-agk-custom-blocks.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Alexey Kovalev",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/agkovalev/wp-agk-custom-blocks/issues"
+  },
+  "homepage": "https://github.com/agkovalev/wp-agk-custom-blocks#readme"
+}
