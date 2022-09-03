@@ -4,7 +4,8 @@
   "description": "WordPress Plugin. Custom Gutenberg blocks library from Alexey Kovalev.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,22 @@
   "bugs": {
     "url": "https://github.com/agkovalev/wp-agk-custom-blocks/issues"
   },
-  "homepage": "https://github.com/agkovalev/wp-agk-custom-blocks#readme"
+  "homepage": "https://github.com/agkovalev/wp-agk-custom-blocks#readme",
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@types/wordpress__block-editor": "^7.0.0",
+    "@types/wordpress__blocks": "^11.0.7",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^9.8.0",
+    "@wordpress/blocks": "^11.15.0",
+    "@wordpress/components": "^20.0.0",
+    "@wordpress/i18n": "^4.16.0",
+    "@wordpress/scripts": "^24.0.0"
+  }
 }

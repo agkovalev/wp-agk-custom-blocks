@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "agk-custom-blocks/definitions-list",
+  "title": "definition list",
+  "textdomain": "agk-custom-blocks",
+  "icon": "list-view",
+  "category": "agkcb",
+  "example": {},
+  "editorScript": "file:./index.js"
+}

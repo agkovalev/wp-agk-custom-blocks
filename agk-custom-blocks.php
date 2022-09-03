@@ -14,6 +14,9 @@ require_once dirname(__FILE__) . '/blocks/include.php';
 class Plugin
 {
 
+    /** 
+     * @deprecated
+     */
     public static function loadBlocks()
     {
         Block\AGKFlipCard::load();
@@ -21,6 +24,9 @@ class Plugin
         Block\AGKBootstrapGrid::load();
     }
 
+    /** 
+     * @deprecated
+     */
     public static function loadBlocksFrontend()
     {
         if (!is_admin()) {
@@ -47,16 +53,22 @@ class Plugin
         );
     }
 
+    public static function loadEditorAssets()
+    {
+        $script_args = include(plugin_dir_path(__FILE__) . 'assets/build/scripts.asset.php');
+        wp_enqueue_script('agk-custom-blocks-editor', plugins_url('assets/build/scripts.js', __FILE__), $script_args['dependencies'], $script_args['version']);
+    }
+
     private static function _setupHooksHandlers()
     {
         // Editor assets
-        add_action('enqueue_block_editor_assets', '\AGK_Custom_Blocks\Plugin::loadBlocks');
+        add_action('enqueue_block_editor_assets', '\AGK_Custom_Blocks\Plugin::loadEditorAssets');
 
         // Frontend assets
-        add_action('enqueue_block_assets', '\AGK_Custom_Blocks\Plugin::loadBlocksFrontend');
+        // add_action('enqueue_block_assets', '\AGK_Custom_Blocks\Plugin::loadBlocksFrontend');
 
         // Custom Block Category
-        add_filter('block_categories', '\AGK_Custom_Blocks\Plugin::registerBlockCategories', 10, 2);
+        // add_filter('block_categories', '\AGK_Custom_Blocks\Plugin::registerBlockCategories', 10, 2);
     }
 
     public static function init()
