@@ -1,0 +1,33 @@
+.agkcb-flipcard {
+  border: 1px dashed #808080;
+  border-radius: 50px;
+}
+
+.agkcb-flipcard-side {
+  border: 1px dashed #808080;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.agkcb-flipcard-side--front {
+  border-color: #164194;
+  background-color: #f0f5fa;
+}
+
+.agkcb-flipcard-side--back {
+  border-color: #f0f5fa;
+  background-color: #164194;
+}
+
+.agkcb-flipcard-side--back .editor-rich-text * {
+  color: #ffffff !important;
+}
+
+.agkcb-flipcard-side__title {
+  font-size: 36px !important;
+  font-style: italic;
+}
+
+.agkcb-flipcard-side__content * {
+  font-size: 24px !important;
+}
